@@ -1,0 +1,30 @@
+<!--index.wxml-->
+
+<view class="center-container">
+  <text class="name-text">请按行输入姓名：</text>
+</view>
+
+<!--滚动输入框-->
+<view class="textarea-container">
+  <textarea bindinput="handleInput" style="height: 300rpx; width: 640rpx; display: block; box-sizing: border-box; left: 5rpx; top: 2rpx; position: relative">{{textInput}}</textarea>
+</view>
+
+<view class="center-container">
+  <text class="name-text">请按行输入每组人数/组数：</text>
+</view>
+
+<view class="textarea-container">
+  <textarea bindinput="handleInput_2" style="height: 300rpx; width: 640rpx; display: block; box-sizing: border-box; left: 2rpx; top: 2rpx; position: relative">{{textInput}}</textarea>
+</view>
+
+<button class="button" bind:tap="groupStudents" style="position: relative; left: 0rpx; top: 40rpx"> 开始</button>
+
+
+<scroll-view class="output" scroll-y="true" style="width: 640rpx; height: 340rpx; display: block; box-sizing: border-box; position: relative; left: 56rpx; top: 75rpx">
+  <view class="output-content">
+    {{ groupResult }}
+  </view>
+</scroll-view>
+
+
+

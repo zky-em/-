@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+text {
+  color: rgb(0, 0, 0);
+  font-size: 50rpx;
+
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  width: 100%;
+  height: 5vh; /* 设置高度 */
+}
+
+.name-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.textarea-container {
+  width: 85%;
+  margin:0 auto;
+  height: 300rpx; /* 设置输入框容器的高度 */
+  border: 1rpx solid rgb(14, 2, 2);
+  overflow: scroll; /* 允许内容溢出时出现滚动条 */
+}
+
+textarea {
+  width:100%;
+  height: 100%; 
+  resize: none;
+} 
+
+.button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,37 @@
+{
+  "entryPagePath": "pages/index/index",
+  
+  "pages": [
+    "pages/index/index",
+    "pages/set/set"
+  ],
+  "window": {
+    "navigationBarTitleText": "分组小程序",
+    "navigationBarBackgroundColor": "#111515",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark"
+  },
+  
+  "tabBar": {
+    "color": "#666",
+
+    "list": [
+      {
+        "text": "分组",
+        "pagePath": "pages/index/index",
+        "iconPath": "assert/主页.png",
+        "selectedIconPath": "assert/打开主页.png"
+      },
+
+      {
+        "text": "设置",
+        "pagePath": "pages/set/set",
+        "iconPath": "assert/设置.png",
+        "selectedIconPath": "assert/打开设置.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
